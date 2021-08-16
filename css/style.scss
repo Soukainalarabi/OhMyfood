@@ -27,7 +27,7 @@ body{
     animation: loader 3s forwards;
 }
   
-#loader-1{
+.loader-1{
     border: 10px solid #F3F3F3;
     border-top: 10px solid $primary;
     border-bottom: 10px solid $secondary;
@@ -42,7 +42,15 @@ body{
     right: 0;
     bottom: 0;
 
-
+}
+@keyframes loader{
+    0%{
+        opacity: 1;
+      }
+      100%{
+        z-index: -10;
+       opacity: 0;
+      }
 }
   @keyframes spin{
     0%{
@@ -51,6 +59,7 @@ body{
       }
     
       100%{
+        z-index: -10;
        opacity: 0;
        transform: rotate(360deg);
       }
