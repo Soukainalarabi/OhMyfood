@@ -1,6 +1,6 @@
 body {
   margin: 0px 0px 0px 0px;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
 }
 
 .loading {
@@ -114,6 +114,7 @@ body {
 
 .localisation {
   border: 2px solid transparent;
+  padding: 16px;
   background-color: #c0c0c01f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +132,10 @@ body {
   margin-left: 10px;
 }
 
+.fa-map-marker-alt {
+  padding-left: 3%;
+}
+
 .presentation {
   text-align: center;
   background-color: #c0c0c047;
@@ -139,14 +144,12 @@ body {
 }
 
 .presentation h1 {
-  font-weight: bold;
   margin: 0px;
 }
 
 @media (max-width: 700px) {
   .presentation h1 {
     margin: auto;
-    width: 50%;
   }
 }
 
@@ -159,6 +162,7 @@ body {
   color: white;
   line-height: 2.5;
   padding: 0px 10px;
+  width: 196px;
   cursor: pointer;
 }
 
@@ -177,19 +181,18 @@ body {
 }
 
 .titre-menu {
-  margin-left: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: shrikhand;
-  font-size: 21px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 96%;
 }
 
 .titre-menu h4 {
   margin-top: 30px;
+  margin-left: 4%;
+  font-size: 23px;
+  width: 95%;
 }
 
 .acceuil-liste {
@@ -229,7 +232,7 @@ body {
 
 .fa-mobile, .fa-list-ul, .fa-store {
   line-height: 3;
-  color: silver;
+  color: #1413136b;
 }
 
 .acceuil {
@@ -247,6 +250,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 95%;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -296,7 +300,6 @@ body {
 h5 {
   width: 100%;
   margin: 8px 0px 0px 18px;
-  font-family: roboto-regular;
 }
 
 .container {
@@ -323,11 +326,11 @@ h5 {
   line-height: 2;
   margin-top: 29px;
   width: 13%;
-  font-family: roboto-regular;
 }
 
 .border-animation {
   width: 73px;
+  height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #99E2D0;
@@ -349,7 +352,6 @@ h5 {
 }
 
 h2 {
-  font-family: roboto-regular;
   margin-left: 30px;
   padding-top: 24px;
 }
@@ -361,17 +363,13 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 14px 0px 14px;
+  padding: 2%;
 }
 
 .restaurants {
   width: 100%;
   background-color: #c0c0c047;
   padding-bottom: 76px;
-}
-
-h3 {
-  font-family: roboto-regular;
 }
 
 .cartes {
@@ -423,7 +421,7 @@ h3 {
 .heart {
   position: relative;
   line-height: 2;
-  margin-top: 18px;
+  margin-top: 3px;
 }
 
 .heart:hover {
@@ -451,15 +449,12 @@ h3 {
   color: #13121287;
   position: relative;
   line-height: 2;
-  width: 10%;
-  margin-top: 30px;
+  margin-top: 34px;
   font-size: 12px;
 }
 
-@media (max-width: 700px) {
-  .coeur {
-    width: 50%;
-  }
+.coeur:hover {
+  color: #9356DC;
 }
 
 .coeur .coeur2 {
@@ -470,6 +465,10 @@ h3 {
   margin-top: -35px;
   margin-left: 2.7px;
   font-size: 19px;
+}
+
+.coeur .coeur2:hover {
+  color: #9356DC;
 }
 
 .new {
@@ -497,6 +496,24 @@ a {
           align-items: center;
 }
 
+.sous-titre h3 {
+  margin: 1px;
+}
+
+.sous-titre p {
+  margin: 0px;
+}
+
+input {
+  border-style: hidden;
+  background-color: #eaebec00;
+  padding-left: 1.5%;
+}
+
+.search:focus {
+  outline: none;
+}
+
 .commander {
   margin-left: auto;
   margin-right: auto;
@@ -515,6 +532,7 @@ a {
           align-items: center;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  cursor: pointer;
   border-radius: 15px;
   background-color: white;
   -webkit-box-shadow: -10px 8px 10px 2px #e4e1e1;
@@ -634,7 +652,7 @@ h6 {
 
 @media (max-width: 700px) {
   .footer-content {
-    margin-left: 6%;
+    margin-left: 4%;
   }
 }
 
