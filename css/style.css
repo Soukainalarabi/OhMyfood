@@ -11,29 +11,12 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #FFF;
+  background-color: #fff;
   left: 0;
   top: 0;
   z-index: 10000;
   -webkit-animation: loader 3s forwards;
           animation: loader 3s forwards;
-}
-
-.loader-1 {
-  border: 10px solid #F3F3F3;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation: spin 3s linear forwards;
-          animation: spin 3s linear forwards;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 @-webkit-keyframes loader {
@@ -56,32 +39,21 @@ body {
   }
 }
 
-@-webkit-keyframes spin {
-  0% {
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    z-index: -10;
-    opacity: 0;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.loader-1 {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 3s linear forwards;
+          animation: spin 3s linear forwards;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .logo {
@@ -154,8 +126,8 @@ body {
 }
 
 .explorer, .commander {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 15px;
   border: none;
   height: 42px;
@@ -217,7 +189,7 @@ body {
 }
 
 .acceuil-liste:hover .fa, .acceuil-liste:hover .fas {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .acceuil-liste p {
@@ -269,7 +241,7 @@ body {
   text-align: center;
   margin: 26px;
   line-height: 1.7;
-  color: #99E2D0;
+  color: #99e2d0;
 }
 
 .contenu {
@@ -333,7 +305,7 @@ h5 {
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin-right: -73px;
 }
 
@@ -342,7 +314,7 @@ h5 {
   position: absolute;
   color: white;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   font-weight: 900;
   margin-left: -10px;
   margin-top: 11px;
@@ -425,7 +397,7 @@ h2 {
 }
 
 .heart:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .heart2 {
@@ -438,7 +410,7 @@ h2 {
 }
 
 .heart2:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .heart1 {
@@ -454,7 +426,7 @@ h2 {
 }
 
 .coeur:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .coeur .coeur2 {
@@ -468,7 +440,7 @@ h2 {
 }
 
 .coeur .coeur2:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .new {
@@ -476,7 +448,7 @@ h2 {
   border-radius: 5px;
   margin-top: 20px;
   margin-left: -84px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 30px;
   color: green;
   border: none;
@@ -525,6 +497,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -534,14 +507,53 @@ input {
       flex-shrink: 1;
   cursor: pointer;
   border-radius: 15px;
+  margin-bottom: 20px;
   background-color: white;
   -webkit-box-shadow: -10px 8px 10px 2px #e4e1e1;
           box-shadow: -10px 8px 10px 2px #e4e1e1;
   border: 0px;
   height: 80px;
   width: 95%;
-  margin-bottom: 20px;
   overflow: hidden;
+  /**Animation border**/
+  top: 40px;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0, 1);
+  -webkit-animation-name: glissement;
+          animation-name: glissement;
+}
+
+@-webkit-keyframes glissement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+}
+
+@keyframes glissement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
 }
 
 .border:hover .border-animation {
@@ -550,6 +562,56 @@ input {
   opacity: 1;
   -webkit-transition: margin-right 0.5s;
   transition: margin-right 0.5s;
+}
+
+.anim-delay-0 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.anim-delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.anim-delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.anim-delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.anim-delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.anim-delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.anim-delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.anim-delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.anim-delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.anim-delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 footer {
@@ -637,9 +699,9 @@ h6 {
 }
 
 .carte-titre {
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 2px solid #99e2d0;
   text-transform: uppercase;
-  width: 11%;
+  width: 10%;
   padding-bottom: 1%;
   margin-left: 4%;
 }
