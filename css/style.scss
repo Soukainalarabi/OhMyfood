@@ -1,3 +1,4 @@
+// VARIABLES///////
 @import "mixins.scss";
 @import "animation.scss";
 $primary: #9356dc;
@@ -7,10 +8,12 @@ $color: #c0c0c047;
 $base-font-family: "Roboto", sans-serif;
 $seconde-font-family: shrikhand;
 $value: 18px;
+// VARIABLES///////
 body {
     margin: 0px 0px 0px 0px;
     font-family: $base-font-family;
 }
+// /ANIMATION LOADING////
 .loading {
     max-width: 2560px;
 }
@@ -23,7 +26,7 @@ body {
     left: 0;
     top: 0;
     z-index: 10000;
-    animation: loader 3s forwards;
+    animation: loader 6s forwards;
     @include loader;
 }
 
@@ -42,7 +45,8 @@ body {
     right: 0;
     bottom: 0;
 }
-
+// ///////////ANIMATION LOADING///////////
+// ///////////HEADER///////////
 .logo {
     display: flex;
     align-items: center;
@@ -54,7 +58,6 @@ body {
         width: 150px;
     }
 }
-
 .fa-arrow-left {
     position: absolute;
     color: black;
@@ -62,7 +65,8 @@ body {
     left: 45px;
     font-size: 23px;
 }
-
+// ///////////HEADER///////////
+/////LOCALISATION//////
 .localisation {
     border: 2px solid transparent;
     padding: 16px;
@@ -75,11 +79,20 @@ body {
         margin-left: 10px;
     }
 }
+input {
+    border-style: hidden;
+    background-color: #eaebec00;
+    padding-left: 1.5%;
+}
 
+.search:focus {
+    outline: none;
+}
 .fa-map-marker-alt {
     padding-left: 3%;
 }
-
+/////LOCALISATION//////
+/////PRESENTATION-ACCEUIL//////
 .presentation {
     text-align: center;
     background-color: $color;
@@ -93,15 +106,25 @@ body {
     }
 }
 
+/////PRESENTATION-ACCEUIL//////
+// BUTTONS-////////////////
+.commander {
+    @extend .explorer;
+    @include push-auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+    text-align: center;
+}
 .explorer {
     background-image: linear-gradient($secondary, $primary);
-    border-radius: 15px;
+    border-radius: 28px;
     border: none;
     height: 42px;
     color: white;
     line-height: 2.5;
     padding: 0px 10px;
-    width: 196px;
+    width: 188px;
     cursor: pointer;
     &:hover {
         background: #965add63;
@@ -110,7 +133,8 @@ body {
         visibility: visible;
     }
 }
-
+// BUTTONS-////////////////
+/////BACKGROUND-IMAGE-PAGE_2_3_4//////
 .cover {
     img {
         width: 100%;
@@ -118,6 +142,8 @@ body {
         object-fit: cover;
     }
 }
+/////BACKGROUND-IMAGE-PAGE_2_3_4//////
+/////TITRE-MENU-PAGE_2_3_4//////
 
 .titre-menu {
     display: flex;
@@ -127,9 +153,33 @@ body {
         margin-top: 30px;
         margin-left: 4%;
         font-size: 23px;
-        width: 95%;
+        width: 270px;
     }
 }
+.coeur {
+    color: #13121287;
+    position: relative;
+    line-height: 2;
+    margin-top: 34px;
+    font-size: 12px;
+    &:hover {
+        color: $primary;
+    }
+
+    .coeur2 {
+        position: absolute;
+        color: white;
+        line-height: -37;
+        margin-top: -35px;
+        margin-left: 2.7px;
+        font-size: 19px;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+/////TITRE-MENU-PAGE_2_3_4//////
+/////BORDER-ACCEUIL//////
 
 .acceuil-liste {
     display: flex;
@@ -200,7 +250,20 @@ body {
     display: flex;
     margin-left: 50px;
 }
-
+.number {
+    text-align: center;
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    background-color: $primary;
+    font-weight: 900;
+    margin-left: -10px;
+    margin-top: 11px;
+    width: $value;
+    height: $value;
+    padding: 4px 4px;
+}
+/////BORDER-ACCEUIL//////
 .plats {
     flex-direction: column;
     width: 60%;
@@ -253,20 +316,6 @@ h5 {
     margin-right: -73px;
 }
 
-.number {
-    text-align: center;
-    position: absolute;
-    color: white;
-    border-radius: 50%;
-    background-color: $primary;
-    font-weight: 900;
-    margin-left: -10px;
-    margin-top: 11px;
-    width: $value;
-    height: $value;
-    padding: 4px 4px;
-}
-
 h2 {
     margin-left: 30px;
     padding-top: 24px;
@@ -279,7 +328,7 @@ h2 {
     justify-content: space-between;
     padding: 2%;
 }
-
+// CARTES-ACCEUIL/////////////////////:
 .restaurants {
     width: 100%;
     background-color: $color;
@@ -322,8 +371,10 @@ h2 {
     position: relative;
     line-height: 2;
     margin-top: 3px;
+
     &:hover {
         color: $primary;
+        transition: color 1s;
     }
 }
 
@@ -336,35 +387,12 @@ h2 {
     font-size: 25px;
     &:hover {
         color: $primary;
+        transition: color 1s;
     }
 }
 
 .heart1 {
     position: relative;
-}
-
-.coeur {
-    color: #13121287;
-    position: relative;
-    line-height: 2;
-    margin-top: 34px;
-    font-size: 12px;
-    &:hover {
-        color: $primary;
-    }
-
-    .coeur2 {
-        color: #eeeeee;
-        position: absolute;
-        color: white;
-        line-height: -37;
-        margin-top: -35px;
-        margin-left: 2.7px;
-        font-size: 19px;
-        &:hover {
-            color: $primary;
-        }
-    }
 }
 
 .new {
@@ -376,8 +404,23 @@ h2 {
     height: 30px;
     color: green;
     border: none;
+    // position: absolute;
+    // border-radius: 5px;
+    // margin-top: -144px;
+    // margin-left: 536px;
+    // background-color: #99e2d0;
+    // height: 32px;
+    // color: green;
+    // border: none;
+    // width: 93px;
+    // background-color: $tertiary;
+    // color: green;
+    // padding: 6px;
+    // border-radius: 5px;
+    // position: absolute;
+    // top: 12px;
+    // right: 22px;
 }
-
 a {
     text-decoration: none;
     color: black;
@@ -394,23 +437,46 @@ a {
     }
 }
 
-input {
-    border-style: hidden;
-    background-color: #eaebec00;
-    padding-left: 1.5%;
+// CARTES-ACCEUIL/////////////////////
+
+// BORDER-PLATS-PAGE-2_3_4////////
+.carte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .carte-content {
+        width: 30%;
+
+        @media (min-width: 700px) and (max-width: 1024px) {
+            width: 43%;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+            padding-top: 4%;
+        }
+    }
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
 }
 
-.search:focus {
-    outline: none;
+.carte-border {
+    margin-left: 8%;
+    margin-top: 2%;
+    @media (max-width: 700px) {
+        margin-left: 4%;
+    }
 }
 
-.commander {
-    @extend .explorer;
-    @include push-auto;
-    display: block;
-    text-align: center;
+.carte-titre {
+    border-bottom: 2px solid $tertiary;
+    text-transform: uppercase;
+    width: 10%;
+    padding-bottom: 1%;
+    margin-left: 4%;
 }
-
 .border {
     display: flex;
     position: relative;
@@ -479,7 +545,8 @@ input {
     animation-delay: 0.9s;
 }
 
-
+// BORDER-PLATS-PAGE-2_3_4////////
+//////////// FOOTER///////////////////
 footer {
     padding-bottom: 27px;
     background-color: #3a3939;
@@ -510,46 +577,6 @@ h6 {
     @extend .fa-utensils;
     font-size: 13px;
 }
-/*/ new design////////////////////*/
-
-.carte {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .carte-content {
-        width: 30%;
-
-        @media (min-width: 700px) and (max-width: 1024px) {
-            width: 43%;
-        }
-        @media (max-width: 700px) {
-            width: 100%;
-            padding-top: 4%;
-        }
-    }
-    @media (max-width: 700px) {
-        flex-direction: column;
-    }
-}
-
-.carte-border {
-    margin-left: 8%;
-    margin-top: 2%;
-    @media (max-width: 700px) {
-        margin-left: 4%;
-    }
-}
-
-.carte-titre {
-    border-bottom: 2px solid $tertiary;
-    text-transform: uppercase;
-    width: 10%;
-    padding-bottom: 1%;
-    margin-left: 4%;
-}
-
 .footer-content {
     max-width: 1381px;
     @include push-auto;
@@ -560,3 +587,4 @@ h6 {
         padding-left: 3%;
     }
 }
+//////////// FOOTER///////////////////
