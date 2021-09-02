@@ -17,7 +17,6 @@ body {
   z-index: 10000;
   animation: loader 6s forwards;
 }
-
 @keyframes loader {
   0% {
     opacity: 1;
@@ -27,6 +26,7 @@ body {
     opacity: 0;
   }
 }
+
 .loader-1 {
   border: 10px solid #f3f3f3;
   border-top: 10px solid #9356dc;
@@ -50,7 +50,6 @@ body {
   border: 2px solid transparent;
   box-shadow: 0 0 15px 5px #8d949ccc;
 }
-
 .logo img {
   padding: 20px 0px 20px 0px;
   width: 150px;
@@ -73,7 +72,6 @@ body {
   color: black;
   align-items: center;
 }
-
 .localisation p {
   margin-left: 10px;
 }
@@ -98,16 +96,15 @@ input {
   padding-top: 23px;
   padding-bottom: 35px;
 }
-
 .presentation h1 {
   margin: 0px;
 }
-
 @media (max-width: 700px) {
   .presentation h1 {
     margin: auto;
   }
 }
+
 .commander {
   margin-left: auto;
   margin-right: auto;
@@ -128,9 +125,9 @@ input {
   width: 188px;
   cursor: pointer;
 }
-
 .explorer:hover, .commander:hover {
   background: #965add63;
+  -webkit-transition: visibility 0.5s;
   transition: visibility 0.5s;
   visibility: visible;
 }
@@ -146,7 +143,6 @@ input {
   font-family: shrikhand;
   width: 96%;
 }
-
 .titre-menu h4 {
   margin-top: 30px;
   margin-left: 4%;
@@ -161,20 +157,16 @@ input {
   margin-top: 34px;
   font-size: 12px;
 }
-
 .coeur:hover {
   color: #9356dc;
 }
-
 .coeur .coeur2 {
   position: absolute;
   color: white;
-  line-height: -37;
   margin-top: -35px;
   margin-left: 2.7px;
   font-size: 19px;
 }
-
 .coeur .coeur2:hover {
   color: #9356dc;
 }
@@ -190,24 +182,21 @@ input {
   border-radius: 15px;
   box-shadow: -10px 8px 10px 2px #e4e1e1;
 }
-
 .acceuil-liste:hover {
   background: #965add2e;
 }
-
 .acceuil-liste:hover .fa, .acceuil-liste:hover .fas {
   color: #9356dc;
 }
-
 .acceuil-liste p {
   margin-left: 18px;
 }
-
 @media (max-width: 700px) {
   .acceuil-liste {
     width: 100%;
   }
 }
+
 .fa-mobile, .fa-store, .fa-list-ul {
   line-height: 3;
   color: #1413136b;
@@ -222,7 +211,6 @@ input {
   width: 95%;
   cursor: pointer;
 }
-
 @media (max-width: 700px) {
   .acceuil {
     margin-left: auto;
@@ -230,6 +218,7 @@ input {
     width: 88%;
   }
 }
+
 .cercle {
   border-radius: 50%;
   background-color: white;
@@ -264,7 +253,6 @@ input {
   flex-direction: column;
   width: 60%;
 }
-
 .plats p {
   color: #1d1d1d;
   margin: 10px 0px 8px 18px;
@@ -319,7 +307,6 @@ h2 {
   margin-left: 30px;
   padding-top: 24px;
 }
-
 .description {
   display: flex;
   justify-content: space-between;
@@ -337,13 +324,13 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 @media (max-width: 700px) {
   .cartes {
     flex-direction: column;
     width: 100%;
   }
 }
+
 .cartes-menu {
   border: 1px solid transparent;
   background-color: white;
@@ -353,7 +340,6 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media (max-width: 700px) {
   .cartes-menu {
     width: 90%;
@@ -372,7 +358,6 @@ h2 {
   line-height: 2;
   margin-top: 3px;
 }
-
 .heart:hover {
   color: #9356dc;
   transition: color 1s;
@@ -381,12 +366,10 @@ h2 {
 .heart2 {
   position: absolute;
   color: white;
-  line-height: -37;
   margin-top: -47px;
   margin-left: 3.5px;
   font-size: 25px;
 }
-
 .heart2:hover {
   color: #9356dc;
   transition: color 1s;
@@ -416,11 +399,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .sous-titre h3 {
   margin: 1px;
 }
-
 .sous-titre p {
   margin: 0px;
 }
@@ -431,11 +412,9 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .carte .carte-content {
   width: 30%;
 }
-
 @media (min-width: 700px) and (max-width: 1024px) {
   .carte .carte-content {
     width: 43%;
@@ -452,16 +431,17 @@ a {
     flex-direction: column;
   }
 }
+
 .carte-border {
   margin-left: 8%;
   margin-top: 2%;
 }
-
 @media (max-width: 700px) {
   .carte-border {
     margin-left: 4%;
   }
 }
+
 .carte-titre {
   border-bottom: 2px solid #99e2d0;
   text-transform: uppercase;
@@ -496,7 +476,6 @@ a {
   animation-timing-function: cubic-bezier(0, 0, 0, 1);
   animation-name: glissement;
 }
-
 @keyframes glissement {
   from {
     opacity: 0;
@@ -558,7 +537,6 @@ footer {
   background-color: #3a3939;
   color: white;
 }
-
 footer a {
   text-decoration: none;
   color: white;
@@ -589,7 +567,6 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media (max-width: 700px) {
   .footer-content {
     margin-left: 4%;
@@ -600,6 +577,5 @@ h6 {
     padding-left: 3%;
   }
 }
-/*# sourceMappingURL=style-w3c.css.map */
 
 /*# sourceMappingURL=style.css.map */
