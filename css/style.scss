@@ -26,7 +26,7 @@ body {
     left: 0;
     top: 0;
     z-index: 10000;
-    animation: loader 6s forwards;
+    animation: loader 3s forwards;
     @include loader;
 }
 
@@ -37,7 +37,8 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin 3s linear forwards;
+    animation: spin 6s linear forwards;
+    @include spin;
     margin: auto;
     position: absolute;
     top: 0;
@@ -471,7 +472,7 @@ a {
 .carte-titre {
     border-bottom: 2px solid $tertiary;
     text-transform: uppercase;
-    width: 10%;
+    width: 6%;
     padding-bottom: 1%;
     margin-left: 4%;
 }

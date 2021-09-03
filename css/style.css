@@ -15,7 +15,7 @@ body {
   left: 0;
   top: 0;
   z-index: 10000;
-  animation: loader 6s forwards;
+  animation: loader 3s forwards;
 }
 @keyframes loader {
   0% {
@@ -34,13 +34,23 @@ body {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 3s linear forwards;
+  animation: spin 6s linear forwards;
   margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 
 .logo {
@@ -445,7 +455,7 @@ a {
 .carte-titre {
   border-bottom: 2px solid #99e2d0;
   text-transform: uppercase;
-  width: 10%;
+  width: 6%;
   padding-bottom: 1%;
   margin-left: 4%;
 }
