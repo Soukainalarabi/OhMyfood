@@ -343,6 +343,7 @@ h2 {
 
 .cartes-menu {
   border: 1px solid transparent;
+  position: relative;
   background-color: white;
   border-radius: 15px;
   margin-top: 20px;
@@ -392,10 +393,11 @@ h2 {
 .new {
   position: absolute;
   border-radius: 5px;
-  margin-top: 20px;
-  margin-left: -84px;
+  top: 5%;
+  right: 5%;
   background-color: #99e2d0;
-  height: 30px;
+  height: 31px;
+  width: 92px;
   color: green;
   border: none;
 }
