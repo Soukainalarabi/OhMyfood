@@ -163,8 +163,10 @@ input {
     line-height: 2;
     margin-top: 34px;
     font-size: 12px;
+    cursor: pointer;
     &:hover {
-        color: $primary;
+        color: $primary ;
+        transition: color 1s;
     }
 
     .coeur2 {
@@ -175,6 +177,7 @@ input {
         font-size: 19px;
         &:hover {
             color: $primary;
+            transition: color 2s;
         }
     }
 }
