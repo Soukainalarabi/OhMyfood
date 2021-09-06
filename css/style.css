@@ -53,16 +53,13 @@ body {
   }
 }
 
-.logo {
+.header__logo {
+  height: 28px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 15px 0px 15px 0px;
   border: 2px solid transparent;
   box-shadow: 0 0 15px 5px #8d949ccc;
-}
-.logo img {
-  padding: 20px 0px 20px 0px;
-  width: 150px;
 }
 
 .fa-arrow-left {
@@ -115,16 +112,7 @@ input {
   }
 }
 
-.commander {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  display: block;
-  text-align: center;
-}
-
-.explorer, .commander {
+.btn {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 28px;
   border: none;
@@ -133,13 +121,14 @@ input {
   line-height: 2.5;
   padding: 0px 10px;
   width: 188px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   cursor: pointer;
 }
-.explorer:hover, .commander:hover {
+.btn:hover {
   background: #965add63;
-  -webkit-transition: visibility 0.5s;
-  transition: visibility 0.5s;
-  visibility: visible;
 }
 
 .cover img {
@@ -184,32 +173,6 @@ input {
   transition: color 2s;
 }
 
-.acceuil-liste {
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 1;
-  width: 29%;
-  margin: 10px 0px;
-  border: 2px solid transparent;
-  background-color: #c0c0c047;
-  border-radius: 15px;
-  box-shadow: -10px 8px 10px 2px #e4e1e1;
-}
-.acceuil-liste:hover {
-  background: #965add2e;
-}
-.acceuil-liste:hover .fa, .acceuil-liste:hover .fas {
-  color: #9356dc;
-}
-.acceuil-liste p {
-  margin-left: 18px;
-}
-@media (max-width: 700px) {
-  .acceuil-liste {
-    width: 100%;
-  }
-}
-
 .fa-mobile, .fa-store, .fa-list-ul {
   line-height: 3;
   color: #1413136b;
@@ -223,6 +186,29 @@ input {
   justify-content: space-between;
   width: 95%;
   cursor: pointer;
+}
+.acceuil__liste {
+  flex-shrink: 1;
+  width: 29%;
+  margin: 10px 0px;
+  border: 2px solid transparent;
+  background-color: #c0c0c047;
+  border-radius: 15px;
+  box-shadow: -10px 8px 10px 2px #e4e1e1;
+}
+.acceuil__liste:hover {
+  background: #965add2e;
+}
+.acceuil__liste:hover .fa, .acceuil__liste:hover .fas {
+  color: #9356dc;
+}
+.acceuil__liste p {
+  margin-left: 18px;
+}
+@media (max-width: 700px) {
+  .acceuil__liste {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .acceuil {
@@ -317,7 +303,7 @@ h5 {
 }
 
 h2 {
-  margin-left: 30px;
+  margin-left: 5%;
   padding-top: 24px;
 }
 .description {
@@ -426,43 +412,34 @@ a {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: 4%;
 }
-.carte .carte-content {
+.carte__content {
   width: 30%;
 }
 @media (min-width: 700px) and (max-width: 1024px) {
-  .carte .carte-content {
+  .carte__content {
     width: 43%;
   }
 }
 @media (max-width: 700px) {
-  .carte .carte-content {
+  .carte__content {
     width: 100%;
-    padding-top: 4%;
   }
+}
+.carte__border {
+  margin-top: 2%;
+}
+.carte__titre {
+  border-bottom: 2px solid #99e2d0;
+  text-transform: uppercase;
+  width: 6%;
+  padding-bottom: 1%;
 }
 @media (max-width: 700px) {
   .carte {
     flex-direction: column;
   }
-}
-
-.carte-border {
-  margin-left: 8%;
-  margin-top: 2%;
-}
-@media (max-width: 700px) {
-  .carte-border {
-    margin-left: 4%;
-  }
-}
-
-.carte-titre {
-  border-bottom: 2px solid #99e2d0;
-  text-transform: uppercase;
-  width: 6%;
-  padding-bottom: 1%;
-  margin-left: 4%;
 }
 
 .border {
@@ -507,43 +484,34 @@ a {
   transition: margin-right 0.5s;
 }
 
-.anim-delay-0 {
+.anim-delay__0 {
   animation-delay: 0s;
 }
-
-.anim-delay-1 {
+.anim-delay__1 {
   animation-delay: 0.1s;
 }
-
-.anim-delay-2 {
+.anim-delay__2 {
   animation-delay: 0.2s;
 }
-
-.anim-delay-3 {
+.anim-delay__3 {
   animation-delay: 0.3s;
 }
-
-.anim-delay-4 {
+.anim-delay__4 {
   animation-delay: 0.4s;
 }
-
-.anim-delay-5 {
+.anim-delay__5 {
   animation-delay: 0.5s;
 }
-
-.anim-delay-6 {
+.anim-delay__6 {
   animation-delay: 0.6s;
 }
-
-.anim-delay-7 {
+.anim-delay__7 {
   animation-delay: 0.7s;
 }
-
-.anim-delay-8 {
+.anim-delay__8 {
   animation-delay: 0.8s;
 }
-
-.anim-delay-9 {
+.anim-delay__9 {
   animation-delay: 0.9s;
 }
 
