@@ -1,4 +1,4 @@
-@mixin loader{
+@mixin loader {
     @keyframes loader {
         0% {
             opacity: 1;
@@ -7,9 +7,9 @@
             z-index: -10;
             opacity: 0;
         }
-    }    
+    }
 }
-@mixin glissement{
+@mixin glissement {
     @keyframes glissement {
         from {
             opacity: 0;
@@ -21,17 +21,13 @@
     }
 }
 @mixin spin {
-    @keyframes spin{
+    @keyframes spin {
         0% {
-            transform: rotate(
-        0deg
-        );
+            transform: rotate(0deg);
             opacity: 1;
         }
         100% {
-            transform: rotate(
-        360deg
-        );
+            transform: rotate(360deg);
             opacity: 0;
         }
     }

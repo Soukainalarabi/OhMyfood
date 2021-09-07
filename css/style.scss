@@ -227,16 +227,16 @@ input {
         width: 88%;
     }
 }
-.cercle {
-    border-radius: 50%;
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    margin: 26px;
-    line-height: 1.7;
-    color: $tertiary;
-}
+// .cercle {
+//     border-radius: 50%;
+//     background-color: white;
+//     width: 25px;
+//     height: 25px;
+//     text-align: center;
+//     margin: 26px;
+//     line-height: 1.7;
+//     color: $tertiary;
+// }
 
 .contenu {
     display: flex;
@@ -475,6 +475,7 @@ a {
     animation-play-state: running;
     animation-timing-function: cubic-bezier(0, 0, 0, 1);
     animation-name: glissement;
+    transition-duration: 0.5s;
     @include glissement;
 
     &:hover {
@@ -483,9 +484,27 @@ a {
             min-width: 4rem;
             opacity: 1;
             transition: margin-right 0.5s;
+            position: relative;
+        }
+        .cercle {
+            transform: rotate(0);
         }
     }
+    .cercle {
+        border-radius: 50%;
+        background-color: white;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        margin: 26px;
+        line-height: 1.7;
+        color: $tertiary;
+        transform: rotate(0);
+        transform: rotate(180deg);
+        transition-duration: 0.5s;
+    }
 }
+
 .anim-delay {
     &__0 {
         animation-delay: 0s;

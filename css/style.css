@@ -218,17 +218,6 @@ input {
   }
 }
 
-.cercle {
-  border-radius: 50%;
-  background-color: white;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  margin: 26px;
-  line-height: 1.7;
-  color: #99e2d0;
-}
-
 .contenu {
   display: flex;
   margin-left: 50px;
@@ -467,6 +456,7 @@ a {
   animation-play-state: running;
   animation-timing-function: cubic-bezier(0, 0, 0, 1);
   animation-name: glissement;
+  transition-duration: 0.5s;
 }
 @keyframes glissement {
   from {
@@ -482,6 +472,23 @@ a {
   min-width: 4rem;
   opacity: 1;
   transition: margin-right 0.5s;
+  position: relative;
+}
+.border:hover .cercle {
+  transform: rotate(0);
+}
+.border .cercle {
+  border-radius: 50%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  margin: 26px;
+  line-height: 1.7;
+  color: #99e2d0;
+  transform: rotate(0);
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 
 .anim-delay__0 {
