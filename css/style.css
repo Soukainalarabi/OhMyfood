@@ -122,12 +122,10 @@ input {
   padding: 0px 10px;
   width: 188px;
   margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   cursor: pointer;
-}
-.btn margin {
-  left: auto;
-  right: auto;
 }
 .btn:hover {
   background: #965add63;
@@ -220,11 +218,9 @@ input {
 }
 @media (max-width: 700px) {
   .acceuil {
+    margin-left: auto;
+    margin-right: auto;
     width: 88%;
-  }
-  .acceuil margin {
-    left: auto;
-    right: auto;
   }
 }
 
@@ -288,23 +284,19 @@ h5 {
   position: relative;
   margin-top: -4rem;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding-bottom: 2%;
   z-index: 1;
 }
-.container margin {
-  left: auto;
-  right: auto;
-}
 
 .organisation, .menus {
   max-width: 1440px;
-}
-.organisation margin, .menus margin {
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prix {
@@ -364,10 +356,8 @@ h2 {
   border-radius: 15px;
   margin-top: 20px;
   width: 45%;
-}
-.cartes-menu margin {
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 700px) {
   .cartes-menu {
@@ -597,10 +587,8 @@ h6 {
 
 .footer-content {
   max-width: 1381px;
-}
-.footer-content margin {
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 700px) {
   .footer-content {
