@@ -61,8 +61,8 @@ body {
 .fa-arrow-left {
     position: absolute;
     color: black;
-    top: 26px;
-    left: 45px;
+    top: 2%;
+    left: 2%;
     font-size: 23px;
 }
 // ///////////HEADER///////////
@@ -123,6 +123,11 @@ input {
     cursor: pointer;
     &:hover {
         background: #965add63;
+    }
+    @media (max-width: 225px) {
+        width: 124px;
+        font-size: 15px;
+        // line-height: 1.5;
     }
 }
 
@@ -227,20 +232,13 @@ input {
         width: 88%;
     }
 }
-// .cercle {
-//     border-radius: 50%;
-//     background-color: white;
-//     width: 25px;
-//     height: 25px;
-//     text-align: center;
-//     margin: 26px;
-//     line-height: 1.7;
-//     color: $tertiary;
-// }
 
 .contenu {
     display: flex;
     margin-left: 50px;
+    @media (max-width: 220px) {
+        margin-left: 25px;
+    }
 }
 .number {
     text-align: center;
@@ -259,6 +257,13 @@ input {
 .plats {
     flex-direction: column;
     width: 60%;
+
+    @media (max-width: 300px) {
+        width: 47%;
+    }
+    @media (max-width: 200px) {
+        width: 30%;
+    }
     p {
         color: #1d1d1d;
         margin: 10px 0px 8px $value;
@@ -273,6 +278,9 @@ input {
 h5 {
     width: 100%;
     margin: 8px 0px 0px $value;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container {
@@ -306,12 +314,16 @@ h5 {
     border-bottom-right-radius: 15px;
     background-color: $tertiary;
     margin-right: -73px;
+    // @media(max-width:220px){
+    //     width: 11px;
+    // }
 }
 
 h2 {
     margin-left: 5%;
     padding-top: 24px;
-    @media (max-width: 700px) {
+    @media (max-width: 200px) {
+        font-size: 17px;
     }
 }
 
@@ -436,8 +448,9 @@ a {
     }
     &__border {
         margin-top: 2%;
-        @media (max-width: 700px) {
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &__titre {
         border-bottom: 2px solid $tertiary;

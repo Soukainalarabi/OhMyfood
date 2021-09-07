@@ -65,8 +65,8 @@ body {
 .fa-arrow-left {
   position: absolute;
   color: black;
-  top: 26px;
-  left: 45px;
+  top: 2%;
+  left: 2%;
   font-size: 23px;
 }
 
@@ -122,13 +122,21 @@ input {
   padding: 0px 10px;
   width: 188px;
   margin-top: 2%;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   cursor: pointer;
 }
+.btn margin {
+  left: auto;
+  right: auto;
+}
 .btn:hover {
   background: #965add63;
+}
+@media (max-width: 225px) {
+  .btn {
+    width: 124px;
+    font-size: 15px;
+  }
 }
 
 .cover img {
@@ -212,15 +220,22 @@ input {
 }
 @media (max-width: 700px) {
   .acceuil {
-    margin-left: auto;
-    margin-right: auto;
     width: 88%;
+  }
+  .acceuil margin {
+    left: auto;
+    right: auto;
   }
 }
 
 .contenu {
   display: flex;
   margin-left: 50px;
+}
+@media (max-width: 220px) {
+  .contenu {
+    margin-left: 25px;
+  }
 }
 
 .number {
@@ -241,6 +256,16 @@ input {
   flex-direction: column;
   width: 60%;
 }
+@media (max-width: 300px) {
+  .plats {
+    width: 47%;
+  }
+}
+@media (max-width: 200px) {
+  .plats {
+    width: 30%;
+  }
+}
 .plats p {
   color: #1d1d1d;
   margin: 10px 0px 8px 18px;
@@ -254,25 +279,32 @@ input {
 h5 {
   width: 100%;
   margin: 8px 0px 0px 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .container {
   position: relative;
   margin-top: -4rem;
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #f6f6f6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding-bottom: 2%;
   z-index: 1;
 }
+.container margin {
+  left: auto;
+  right: auto;
+}
 
 .organisation, .menus {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+}
+.organisation margin, .menus margin {
+  left: auto;
+  right: auto;
 }
 
 .prix {
@@ -295,6 +327,12 @@ h2 {
   margin-left: 5%;
   padding-top: 24px;
 }
+@media (max-width: 200px) {
+  h2 {
+    font-size: 17px;
+  }
+}
+
 .description {
   display: flex;
   justify-content: space-between;
@@ -326,8 +364,10 @@ h2 {
   border-radius: 15px;
   margin-top: 20px;
   width: 45%;
-  margin-left: auto;
-  margin-right: auto;
+}
+.cartes-menu margin {
+  left: auto;
+  right: auto;
 }
 @media (max-width: 700px) {
   .cartes-menu {
@@ -418,6 +458,9 @@ a {
 }
 .carte__border {
   margin-top: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte__titre {
   border-bottom: 2px solid #99e2d0;
@@ -554,8 +597,10 @@ h6 {
 
 .footer-content {
   max-width: 1381px;
-  margin-left: auto;
-  margin-right: auto;
+}
+.footer-content margin {
+  left: auto;
+  right: auto;
 }
 @media (max-width: 700px) {
   .footer-content {
