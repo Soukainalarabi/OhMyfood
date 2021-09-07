@@ -1,0 +1,19 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "projet sass 3",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass  --watch css:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soukainalarabi/soukainalarabi_3_20210815.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soukainalarabi/soukainalarabi_3_20210815/issues"
+  },
+  "homepage": "https://github.com/Soukainalarabi/soukainalarabi_3_20210815#readme"
+}
